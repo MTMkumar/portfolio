@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teja Mahesh Kumar Marlapudi | Full Stack Developer</title>
+<meta name="description" content="Portfolio of Teja Mahesh Kumar Marlapudi, SDE-1 building React interfaces, with a background in Java and Spring Boot. Based in Visakhapatnam, India.">
+<meta property="og:title" content="Teja Mahesh Kumar Marlapudi | Full Stack Developer">
+<meta property="og:description" content="Java, Spring Boot, React.js and REST API developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b14;--bg2:#0d1424;--card:#111a2e;--tx:#e8edf7;--mu:#8a96ad;--ac:#2f7bff;--ac2:#6fa8ff;--bd:#1f2b45;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="light"]{--bg:#f5f8ff;--bg2:#e9f0ff;--card:#fff;--tx:#0e1a33;--mu:#55637e;--ac:#1a64f0;--ac2:#2f7bff;--bd:#d5e0f5}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]):not([data-theme="light"]){--bg:#f5f8ff;--bg2:#e9f0ff;--card:#fff;--tx:#0e1a33;--mu:#55637e;--ac:#1a64f0;--ac2:#2f7bff;--bd:#d5e0f5}}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;overflow-x:hidden;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--ac2);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:84px 0}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);margin:0 0 32px;font-weight:800;letter-spacing:-.02em}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-weight:800;color:var(--ac2)}
+.links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.links a{padding:6px 10px;border-radius:8px;color:var(--mu);font-size:.88rem;white-space:nowrap;transition:.2s}
+.links a:hover,.links a.on{color:var(--tx);background:var(--bg2)}
+.links a.on{box-shadow:inset 0 -2px var(--ac)}
+#theme{background:var(--bg2);border:1px solid var(--bd);color:var(--tx);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:1rem;flex:none}
+#hero{min-height:100svh;display:flex;align-items:center;position:relative;padding-top:90px;overflow:hidden;background:radial-gradient(900px 500px at 80% 10%,color-mix(in srgb,var(--ac) 22%,transparent),transparent),var(--bg)}
+#fx{position:absolute;inset:0;width:100%;height:100%}
+#hero .wrap{position:relative}
+.hi{color:var(--ac2);font-weight:600}
+h1{font-size:clamp(2.3rem,8vw,4.6rem);line-height:1.05;margin:10px 0 14px;font-weight:800;letter-spacing:-.03em}
+.type{font-size:clamp(1.1rem,3.2vw,1.6rem);color:var(--mu);min-height:2em}
+.type b{color:var(--tx);font-weight:600}
+.caret{display:inline-block;width:2px;height:1.1em;background:var(--ac2);margin-left:3px;vertical-align:-.15em;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.tag{max-width:540px;color:var(--mu);margin:8px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 22px;border-radius:10px;font-weight:600;border:1px solid var(--ac);transition:transform .2s,box-shadow .2s,background .2s;display:inline-block}
+.btn.p{background:var(--ac);color:#fff}
+.btn.p:hover{box-shadow:0 8px 28px color-mix(in srgb,var(--ac) 55%,transparent);transform:translateY(-2px)}
+.btn.s:hover{background:color-mix(in srgb,var(--ac) 14%,transparent);transform:translateY(-2px)}
+.load>*{opacity:0;transform:translateY(22px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+.load>*:nth-child(2){animation-delay:.12s}.load>*:nth-child(3){animation-delay:.24s}.load>*:nth-child(4){animation-delay:.36s}.load>*:nth-child(5){animation-delay:.48s}
+@keyframes up{to{opacity:1;transform:none}}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+.about{display:grid;gap:32px}
+@media(min-width:760px){.about{grid-template-columns:1.4fr 1fr}}
+.about p{color:var(--mu);margin:0 0 14px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px}
+.stat strong{display:block;font-size:1.9rem;color:var(--ac2);line-height:1.1}
+.stat span{color:var(--mu);font-size:.85rem}
+.skills{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.sk{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:20px}
+.sk h3{margin:0 0 14px;font-size:1rem}
+.bar{margin-bottom:12px;font-size:.85rem}
+.bar div{display:flex;justify-content:space-between;color:var(--mu);margin-bottom:5px}
+.bar i{display:block;height:6px;border-radius:6px;background:var(--bg2);overflow:hidden}
+.bar i::after{content:"";display:block;height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,var(--ac),var(--ac2));transition:width 1.3s cubic-bezier(.2,.7,.2,1)}
+.in .bar i::after{width:var(--w)}
+.tl{position:relative;padding-left:26px;border-left:2px solid var(--bd);display:grid;gap:26px}
+.job{position:relative}
+.job::before{content:"";position:absolute;left:-34px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 5px color-mix(in srgb,var(--ac) 25%,transparent)}
+.job h3{margin:0}.job small{color:var(--ac2);font-weight:600}
+.job ul{margin:8px 0 0;padding-left:18px;color:var(--mu)}
+.proj{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:22px;transition:transform .15s ease-out,border-color .25s,box-shadow .25s;transform-style:preserve-3d;will-change:transform}
+.card:hover{border-color:var(--ac);box-shadow:0 14px 40px color-mix(in srgb,var(--ac) 22%,transparent)}
+.card h3{margin:0 0 8px}.card p{color:var(--mu);margin:0 0 14px;font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.chips span{font-size:.75rem;padding:3px 10px;border-radius:99px;background:color-mix(in srgb,var(--ac) 14%,transparent);color:var(--ac2)}
+.card a{font-size:.88rem;font-weight:600;color:var(--ac2);margin-right:14px}
+.edu{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.edu .card h3{font-size:1.05rem}
+.contact{display:grid;gap:28px}
+@media(min-width:760px){.contact{grid-template-columns:1fr 1.2fr}}
+.info a{display:flex;align-items:center;gap:12px;padding:12px 0;color:var(--mu);border-bottom:1px solid var(--bd);transition:color .2s,padding .2s}
+.info a:hover{color:var(--ac2);padding-left:6px}
+form{display:grid;gap:12px}
+label{font-size:.85rem;color:var(--mu)}
+input,textarea{width:100%;margin-top:4px;padding:12px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:inherit}
+input:focus,textarea:focus{border-color:var(--ac);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--ac) 25%,transparent)}
+button.btn{cursor:pointer;font:inherit;font-weight:600}
+#msg{font-size:.88rem;color:var(--ac2);min-height:1.3em}
+footer{border-top:1px solid var(--bd);padding:26px 0;color:var(--mu);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+#top{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;border:0;background:var(--ac);color:#fff;font-size:1.1rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:40}
+#top.show{opacity:1;pointer-events:auto}
+#glow{position:fixed;width:340px;height:340px;border-radius:50%;pointer-events:none;z-index:1;left:0;top:0;background:radial-gradient(circle,color-mix(in srgb,var(--ac) 16%,transparent),transparent 65%);transform:translate(-999px,-999px)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.load>*,.rv{opacity:1;transform:none}.bar i::after{width:var(--w)}html{scroll-behavior:auto}#glow,#fx{display:none}}
+</style>
+</head>
+<body>
+<div id="glow" aria-hidden="true"></div>
+<nav aria-label="Main"><div class="wrap">
+<a href="#hero" class="logo">Mahesh.dev</a>
+<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+<button id="theme" aria-label="Toggle light and dark theme">☀</button>
+</div></nav>
+
+<header id="hero"><canvas id="fx" aria-hidden="true"></canvas>
+<div class="wrap load">
+<div class="hi">Hi, I'm</div>
+<h1>Teja Mahesh Kumar Marlapudi</h1>
+<div class="type" aria-live="off">I build <b id="tw"></b><span class="caret"></span></div>
+<p class="tag">SDE-1 at Aerosimple Technologies, building React interfaces for airport operations. Before that, Java and Spring Boot for banking and payment systems.</p>
+<div class="btns"><a class="btn p" href="resume.pdf" download>Download Resume</a><a class="btn s" href="#contact">Contact Me</a></div>
+</div></header>
+
+<main>
+<section id="about"><div class="wrap"><h2 class="rv">About me</h2>
+<div class="about rv">
+<div><p>I'm a software developer who has worked on both sides of the stack. At Aerosimple I build React interfaces for airport inspections, asset tracking and compliance. Before that I built Java and Spring Boot services for banking and card payment systems at Betamonks.</p>
+<p>I'm open to Software Engineer, JavaScript Developer and Full Stack roles.</p></div>
+<div class="stats">
+<div class="stat"><strong data-n="12">0</strong><span>Technologies</span></div>
+<div class="stat"><strong data-n="2">0</strong><span>Years in industry</span></div>
+<div class="stat"><strong data-n="2">0</strong><span>Personal projects</span></div>
+<div class="stat"><strong>IN</strong><span>Visakhapatnam</span></div>
+</div></div></div></section>
+
+<section id="skills"><div class="wrap"><h2 class="rv">Skills</h2><div class="skills" id="skillGrid"></div></div></section>
+
+<section id="experience"><div class="wrap"><h2 class="rv">Experience</h2>
+<div class="tl rv">
+<div class="job"><small>Nov 2025 to present</small><h3>Software Development Engineer I, Aerosimple Technologies</h3>
+<ul><li>Build responsive React.js interfaces for airport operations and inspection workflows on desktop, tablet and mobile.</li><li>Created reusable components for modules such as the inspections builder, asset tracking, operations logs and compliance dashboards.</li><li>Integrated the UI with backend services through REST APIs and managed complex data flow with Context and Redux.</li><li>Cut load times on operational dashboards with code splitting, lazy loading and memoization.</li><li>Worked with designers, backend developers and product managers in agile sprints, code reviews and Git-based workflows.</li></ul></div>
+<div class="job"><small>Jun 2024 to Oct 2025</small><h3>Java Developer, Betamonks Technology Factory</h3>
+<ul><li>Built Java enterprise applications for banking and payments on projects for Axis Bank, Kerala Bank and VCF (Axis / ICICI).</li><li>Designed backend services and REST APIs with Spring Boot and Java 8+, including card management and real-time transaction modules.</li><li>Used JDBC and Hibernate with Oracle and PostgreSQL, working under PCI-DSS security requirements.</li><li>Documented specifications, APIs and deployment procedures for the team.</li></ul></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap"><h2 class="rv">Projects</h2><div class="proj" id="projGrid"></div></div></section>
+
+<section id="education"><div class="wrap"><h2 class="rv">Education and certifications</h2>
+<div class="edu rv">
+<div class="card"><h3>B.Tech, Computer Science</h3><p>Vignan Institute of Information Technology, JNTUK. 2023. GPA 7.18.</p></div>
+<div class="card"><h3>Intermediate (12th)</h3><p>APSWREIS Jr College, BIEAP. 2019. GPA 8.92.</p></div>
+<div class="card"><h3>Secondary (10th)</h3><p>APSWREI School, SSC. 2017. GPA 9.2.</p></div>
+<div class="card"><h3>Full Stack Development Bootcamp</h3><p>GeeksforGeeks. Completed.</p></div>
+<div class="card"><h3>Introduction to Python</h3><p>Sololearn. Completed.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><h2 class="rv">Get in touch</h2>
+<div class="contact rv">
+<div class="info">
+<a href="mailto:maheshmtm04@gmail.com">✉ maheshmtm04@gmail.com</a>
+<a href="tel:+919347620529">☎ 93476 20529</a>
+<a href="https://www.linkedin.com/in/teja-mahesh-kumar-marlapudi-70265a21b/" target="_blank" rel="noopener">in linkedin.com/in/teja-mahesh-kumar-marlapudi</a>
+<a href="https://github.com/MTMkumar" target="_blank" rel="noopener">⌥ github.com/MTMkumar</a>
+<a href="https://www.kaggle.com/maheshmtm" target="_blank" rel="noopener">◈ kaggle.com/maheshmtm</a>
+</div>
+<form id="cf">
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label>
+<label>Message<textarea name="message" rows="5" required></textarea></label>
+<button class="btn p" type="submit">Send message</button><div id="msg" role="status"></div>
+</form></div></div></section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> Teja Mahesh Kumar Marlapudi</span><a href="#hero">Back to top</a></div></footer>
+<button id="top" aria-label="Back to top">↑</button>
+
+<script>
+const D={
+roles:["airport operations dashboards","responsive React interfaces","Spring Boot banking services","full stack products"],
+skills:{
+Frontend:[["React.js",85],["Redux",80],["HTML & CSS",85]],
+Languages:[["Java",90],["JavaScript",85],["Python",65],["C",60]],
+Backend:[["Spring Boot",75],["REST APIs",88],["Hibernate & JDBC",75]],
+Database:[["SQL",80],["Oracle / PostgreSQL",72],["PL/SQL",60]],
+Tools:[["Git & GitHub",85],["Postman",80],["VS Code & Eclipse",85]]},
+projects:[
+{t:"Ambulance Tracker",d:"Alerts hospital staff when an ambulance enters a 3 km radius so they can prepare early. Live location and patient details update in real time. Built under the Save Life initiative.",s:["React.js","Node.js","MongoDB","Express","Socket.io","Geolocation API"],g:"https://github.com/MTMkumar"},
+{t:"Future video frame prediction",d:"A GAN model that predicts upcoming video frames despite camera movement and lighting changes. Trained on the Two-Cube dataset, aimed at alerting security teams seconds before an incident.",s:["GANs","Deep Learning","Python"],g:"https://github.com/MTMkumar"}]};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+$("#yr").textContent=new Date().getFullYear();
+$("#skillGrid").innerHTML=Object.entries(D.skills).map(([k,v])=>`<div class="sk rv"><h3>${k}</h3>${v.map(([n,p])=>`<div class="bar"><div><span>${n}</span><span>${p}%</span></div><i style="--w:${p}%"></i></div>`).join("")}</div>`).join("");
+$("#projGrid").innerHTML=D.projects.map(p=>`<article class="card rv"><h3>${p.t}</h3><p>${p.d}</p><div class="chips">${p.s.map(x=>`<span>${x}</span>`).join("")}</div><a href="${p.g}" target="_blank" rel="noopener">Code</a><a href="#contact">Live demo</a></article>`).join("");
+/* theme */
+const root=document.documentElement,tb=$("#theme");
+try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
+const isLight=()=>root.dataset.theme?root.dataset.theme==="light":matchMedia("(prefers-color-scheme:light)").matches;
+const sync=()=>tb.textContent=isLight()?"☾":"☀";sync();
+tb.onclick=()=>{root.dataset.theme=isLight()?"dark":"light";try{localStorage.setItem("theme",root.dataset.theme)}catch(e){}sync()};
+/* typing */
+const tw=$("#tw");let ri=0,ci=0,del=false;
+function tick(){const w=D.roles[ri];ci+=del?-1:1;tw.textContent=w.slice(0,ci);let d=del?35:70;
+if(!del&&ci===w.length){del=true;d=1400}else if(del&&ci===0){del=false;ri=(ri+1)%D.roles.length;d=300}setTimeout(tick,d)}
+rm?tw.textContent=D.roles[0]:tick();
+/* reveal + counters */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add("in");
+e.target.querySelectorAll("[data-n]").forEach(c=>{const n=+c.dataset.n;if(rm){c.textContent=n;return}let i=0;const t=setInterval(()=>{c.textContent=++i;if(i>=n)clearInterval(t)},90)});io.unobserve(e.target)}),{threshold:.15});
+$$(".rv").forEach(e=>io.observe(e));
+/* active nav */
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$(".links a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+$$("main section").forEach(s=>so.observe(s));
+/* back to top */
+addEventListener("scroll",()=>$("#top").classList.toggle("show",scrollY>500),{passive:true});
+$("#top").onclick=()=>scrollTo({top:0,behavior:rm?"auto":"smooth"});
+/* cursor glow + card tilt */
+if(!rm&&matchMedia("(hover:hover)").matches){const g=$("#glow");
+addEventListener("mousemove",e=>g.style.transform=`translate(${e.clientX-170}px,${e.clientY-170}px)`);
+$$(".card").forEach(c=>{c.addEventListener("mousemove",e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(700px) rotateY(${x*8}deg) rotateX(${-y*8}deg) translateY(-4px)`});c.addEventListener("mouseleave",()=>c.style.transform="")})}
+/* particles */
+if(!rm){const cv=$("#fx"),x=cv.getContext("2d");let w,h,P=[];
+const rs=()=>{w=cv.width=cv.offsetWidth;h=cv.height=cv.offsetHeight;P=Array.from({length:Math.min(70,w/14|0)},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4}))};
+rs();addEventListener("resize",rs);
+(function f(){x.clearRect(0,0,w,h);const c=getComputedStyle(root).getPropertyValue("--ac2").trim()||"#6fa8ff";
+P.forEach((p,i)=>{p.x=(p.x+p.vx+w)%w;p.y=(p.y+p.vy+h)%h;x.fillStyle=c;x.globalAlpha=.7;x.beginPath();x.arc(p.x,p.y,1.8,0,7);x.fill();
+for(let j=i+1;j<P.length;j++){const q=P[j],d=Math.hypot(p.x-q.x,p.y-q.y);if(d<120){x.strokeStyle=c;x.globalAlpha=(1-d/120)*.25;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}});requestAnimationFrame(f)})()}
+/* contact form: opens the visitor's email app. Swap for Formspree by setting FORM_URL. */
+const FORM_URL="";
+$("#cf").onsubmit=async e=>{e.preventDefault();const f=new FormData(e.target),m=$("#msg");
+if(FORM_URL){try{const r=await fetch(FORM_URL,{method:"POST",body:f,headers:{Accept:"application/json"}});m.textContent=r.ok?"Message sent. I'll reply soon.":"Could not send. Email me directly instead.";if(r.ok)e.target.reset()}catch(_){m.textContent="Could not send. Email me directly instead."}return}
+location.href=`mailto:maheshmtm04@gmail.com?subject=${encodeURIComponent("Portfolio message from "+f.get("name"))}&body=${encodeURIComponent(f.get("message")+"\n\nReply to: "+f.get("email"))}`;m.textContent="Opening your email app..."};
+</script>
+</body>
+</html>
